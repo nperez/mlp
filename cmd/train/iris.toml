@@ -1,6 +1,8 @@
-StepCount = 100000
+StepCount = 1000
 ModelPath = "./iris.pbuf"
 Optimizer = "RMSProp"
+LossFunction = "CrossEntropy"
+StepReportingMod = 100
 
 [IngestorConfig]
 Type = 0 # CSVIngestor
