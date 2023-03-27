@@ -1,0 +1,33 @@
+StepCount = 1000
+ModelPath = "./water.gob"
+Optimizer = "RMSProp"
+LossFunction = "CrossEntropy"
+StepReportingMod = 100
+
+[IngestorConfig]
+Type = 0 # CSVIngestor
+BatchSize = 200
+DatasetPath = "./water.data.csv"
+InputIndicies = [0,1,2,3,4,5,6]
+ExpectedIndicies = [8,9,10,11,12]
+FieldCount = 13
+
+[[Layers]]
+InputCount = 7
+OutputCount = 8
+Activation = ["LeakyReLU"]
+[[Layers]]
+InputCount = 8
+OutputCount = 8
+Activation = ["LeakyReLU"]
+[[Layers]]
+InputCount = 8
+OutputCount = 8
+Activation = ["LeakyReLU"]
+[[Layers]]
+InputCount = 8
+OutputCount = 5
+Activation = ["Softmax"]
+
+
+

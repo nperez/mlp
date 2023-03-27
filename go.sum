@@ -1,0 +1,4 @@
+github.com/BurntSushi/toml v1.2.1 h1:9F2/+DoOYIOksmaJFPw1tGFy1eDnIJXg+UHjuD8lTak=
+github.com/BurntSushi/toml v1.2.1/go.mod h1:CxXYINrC8qIiEnFrOxCa7Jy5BFHlXnUU2pbicEuybxQ=
+github.com/nlpodyssey/spago v1.0.1 h1:kMaqd51RZCXbY7u6hNvJoyUf7k0kpKtd6YaSKnlB1bQ=
+github.com/nlpodyssey/spago v1.0.1/go.mod h1:myGGtjwdlurAzacv7iXHY7KVfWii6MaHZo/eCDd6iE4=

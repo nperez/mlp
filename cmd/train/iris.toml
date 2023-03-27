@@ -1,0 +1,23 @@
+StepCount = 100000
+ModelPath = "./iris.pbuf"
+Optimizer = "RMSProp"
+
+[IngestorConfig]
+Type = 0 # CSVIngestor
+BatchSize = 50
+DatasetPath = "./iris.data.csv"
+InputIndicies = [0,1,2,3]
+ExpectedIndicies = [5,6,7]
+FieldCount = 8
+
+[[Layers]]
+InputCount = 4
+NeuronCount = 5
+Activation = ["LeakyReLU"]
+[[Layers]]
+InputCount = 5
+NeuronCount = 3
+Activation = ["Softmax"]
+
+
+
