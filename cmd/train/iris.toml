@@ -14,11 +14,11 @@ FieldCount = 8
 
 [[Layers]]
 InputCount = 4
-NeuronCount = 5
+OutputCount = 5
 Activation = ["LeakyReLU"]
 [[Layers]]
 InputCount = 5
-NeuronCount = 3
+OutputCount = 3
 Activation = ["Softmax"]
 
 
